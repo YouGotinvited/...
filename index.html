@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>:) Welcome</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            margin: 0;
+        }
+        
+        #content {
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        #discord-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #music {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <audio id="music" src="your-music-file.mp3" autoplay loop></audio>
+    <div id="content">
+        <h1>Hello There</h1>
+        <p>Welcome. More Stuff to Be Added Soon.</p>
+    </div>
+
+    <div id="discord-links">
+        <p>Join. Make this Youtuber Happy.: <a href="https://discord.gg/vozify" target="_blank">https://discord.gg/vozify</a></p>
+        <p>Credits Aka My Discord.: <a href="https://discord.gg/trAeqCyS59" target="_blank">https://discord.gg/trAeqCyS59</a></p>
+    </div>
+
+    <script>
+        const background = document.querySelector('body');
+        document.addEventListener('mousemove', (e) => {
+            const moveX = -(e.clientX / window.innerWidth - 0.5) * 50;
+            const moveY = -(e.clientY / window.innerHeight - 0.5) * 50;
+            background.style.transform = `translate(${moveX}px, ${moveY}px)`;
+        });
+    </script>
+</body>
+</html>
